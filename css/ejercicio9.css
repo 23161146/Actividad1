@@ -1,60 +1,39 @@
-/*
-  1. VARIABLES CSS (Custom Properties)
-  - Propósito: Centralizar colores, fuentes y tamaños para fácil mantenimiento.
-  - Beneficios: Cambios globales desde un solo lugar.
-*/
+
 :root {
-    --color-primario: #927dc1;      /* Color principal (morado claro) */
-    --color-secundario: #4CC9F0;    /* Color acento (verde-azul) */
-    --color-fondo: #F8F9FA;         /* Color de fondo (gris claro) */
-    --color-texto: #2B2D42;         /* Color de texto principal */
-    --color-borde: #E9ECEF;         /* Color de bordes sutiles */
+    --color-primario: #927dc1;      
+    --color-secundario: #4CC9F0;    
+    --color-fondo: #F8F9FA;        
+    --color-texto: #2B2D42;         
+    --color-borde: #E9ECEF;         
 }
 
-/*
-  2. RESET BÁSICO
-  - Propósito: Eliminar márgenes y paddings predeterminados del navegador.
-  - Importancia: Evita inconsistencias entre navegadores.
-*/
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Incluye padding y border en el ancho/alto */
+    box-sizing: border-box; 
 }
 
-/*
-  3. ESTILOS GENERALES
-  - Tipografía: 'Inter' es una fuente moderna y legible.
-  - Fondo: Color claro para contraste con el formulario.
-*/
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--color-fondo);
     color: var(--color-texto);
-    line-height: 1.6; /* Mejora legibilidad en textos largos */
-    padding: 40px 20px; /* Espaciado externo */
+    line-height: 1.6; 
+    padding: 40px 20px; 
 }
 
-/*
-  4. CONTENEDOR PRINCIPAL
-  - max-width: Limita el ancho en pantallas grandes.
-  - margin: 0 auto; Centra el contenedor horizontalmente.
-  - box-shadow: Efecto de elevación sutil.
-*/
+
 .contenedor-formulario {
     max-width: 600px;
     margin: 0 auto;
     background: white;
     padding: 40px;
-    border-radius: 12px; /* Bordes redondeados */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Sombra exterior */
+    border-radius: 12px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); 
 }
 
-/*
-  5. ESTILOS DE TIPOGRAFÍA
-  - Jerarquía visual: h1 > subtítulo > labels > inputs.
-  - font-weight: Negritas para títulos y labels.
-*/
+
 h1 {
     font-size: 28px;
     color: var(--color-primario);
@@ -62,15 +41,11 @@ h1 {
 }
 
 .subtitulo {
-    color: #6C757D; /* Gris para texto secundario */
+    color: #6C757D; 
     margin-bottom: 30px;
 }
 
-/*
-  6. GRUPOS DE FORMULARIO
-  - margin-bottom: Espaciado vertical entre grupos.
-  - display: block en labels para ocupar toda la línea.
-*/
+
 .grupo-formulario {
     margin-bottom: 20px;
 }
@@ -78,15 +53,11 @@ h1 {
 label {
     display: block;
     margin-bottom: 8px;
-    font-weight: 500; /* Semi-negrita */
+    font-weight: 500; 
     font-size: 14px;
 }
 
-/*
-  7. INPUTS Y TEXTAREA
-  - transition: Efecto suave al hacer focus.
-  - :focus-state: Feedback visual al interactuar.
-*/
+
 input, textarea {
     width: 100%;
     padding: 12px 15px;
@@ -101,23 +72,14 @@ input:focus, textarea:focus {
     box-shadow: 0 0 0 3px rgba(76, 201, 240, 0.2); /* Sombra interior (efecto glow) */
 }
 
-/*
-  8. DISPOSICIÓN EN COLUMNAS (GRUPO DOBLE)
-  - grid-template-columns: Divide en 2 columnas iguales.
-  - gap: Espacio entre columnas.
-*/
+
 .grupo-doble {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-/*
-  9. BOTÓN DE ENVÍO
-  - cursor: pointer; Cambia el cursor al pasar sobre el botón.
-  - flexbox: Centra texto + ícono.
-  - hover-state: Efecto al interactuar.
-*/
+
 .boton-enviar {
     background-color: var(--color-primario);
     color: white;
@@ -133,5 +95,5 @@ input:focus, textarea:focus {
 }
 
 .boton-enviar:hover {
-    background-color: #2a0880; /* Color oscuro al pasar el mouse */
+    background-color: #2a0880; 
 }

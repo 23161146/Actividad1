@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora | Máximo, Mínimo y Promedio</title>
+</head>
+<body>
+    <h1>Calculadora de Números</h1>
+    <p>Ingresa varios números separados por comas.</p>
+
+    <form id="form-calculadora">
+        <label for="numeros">Números (separados por comas):</label><br>
+        <input type="text" id="numeros" placeholder="Ej: 10, 20, 30, 40, 50"><br>
+        <span id="mensaje-error" style="color: red;"></span>
+        <br><br>
+
+        <button type="button" id="btn-calcular">Calcular</button>
+        <br><br>
+
+        <label for="mayor">Número mayor:</label><br>
+        <input type="text" id="mayor" readonly placeholder="Resultado"><br><br>
+
+        <label for="menor">Número menor:</label><br>
+        <input type="text" id="menor" readonly placeholder="Resultado"><br><br>
+
+        <label for="promedio">Promedio:</label><br>
+        <input type="text" id="promedio" readonly placeholder="Resultado">
+    </form>
+
+    <script src="js/ejercicio14.js"></script>
+</body>
+</html>

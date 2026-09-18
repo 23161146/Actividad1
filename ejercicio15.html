@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora | Calificaciones de Estudiantes</title>
+</head>
+<body>
+    <h1>Calificaciones de Estudiantes</h1>
+    <p>Agrega estudiantes con su nombre y calificación.</p>
+
+    <form id="form-estudiante">
+        <label for="nombre">Nombre del estudiante:</label><br>
+        <input type="text" id="nombre" placeholder="Ej: Juan"><br>
+        <span id="mensaje-error-agregar" style="color: red;"></span>
+        <br><br>
+
+        <label for="calificacion">Calificación:</label><br>
+        <input type="text" id="calificacion" placeholder="Ej: 85"><br>
+
+        <button type="button" id="btn-agregar">Agregar estudiante</button>
+        <br><br>
+
+        <p><strong>Estudiantes agregados:</strong></p>
+        <ul id="lista-estudiantes"></ul>
+
+        <button type="button" id="btn-calcular">Calcular</button>
+        <span id="mensaje-error-calcular" style="color: red;"></span>
+        <br><br>
+
+        <label for="promedio">Calificación promedio:</label><br>
+        <input type="text" id="promedio" readonly placeholder="Resultado"><br><br>
+
+        <label for="mejor">Estudiante con la calificación más alta:</label><br>
+        <input type="text" id="mejor" readonly placeholder="Resultado"><br><br>
+
+        <label for="peor">Estudiante con la calificación más baja:</label><br>
+        <input type="text" id="peor" readonly placeholder="Resultado">
+    </form>
+
+    <script src="js/ejercicio15.js"></script>
+</body>
+</html>

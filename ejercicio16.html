@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora | Operaciones Básicas</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <h1>Calculadora de Números</h1>
+    <p>Ingresa dos números y elige la operación.</p>
+
+    <form id="form-calculadora">
+        <label for="numero1">Número 1:</label><br>
+        <input type="text" id="numero1" placeholder="Ej: 10"><br><br>
+
+        <label for="numero2">Número 2:</label><br>
+        <input type="text" id="numero2" placeholder="Ej: 5"><br><br>
+
+        <button type="button" class="btn-operacion" data-operacion="suma">Sumar</button>
+        <button type="button" class="btn-operacion" data-operacion="resta">Restar</button>
+        <button type="button" class="btn-operacion" data-operacion="multiplicacion">Multiplicar</button>
+        <button type="button" class="btn-operacion" data-operacion="division">Dividir</button>
+        <br><br>
+
+        <label for="resultado">Resultado:</label><br>
+        <input type="text" id="resultado" readonly placeholder="Resultado">
+    </form>
+
+    <script src="js/ejercicio16.js"></script>
+</body>
+</html>
